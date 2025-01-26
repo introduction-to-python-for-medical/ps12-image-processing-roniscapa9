@@ -1,6 +1,5 @@
 from PIL import Image
 import numpy as np
-from scipy.signal import convolve2d
 from scipy.ndimage import convolve
 from image_utils import load_image, edge_detection
 from skimage.filters import median
