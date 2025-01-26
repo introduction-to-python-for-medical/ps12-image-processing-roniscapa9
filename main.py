@@ -1,3 +1,11 @@
+from PIL import Image
+import numpy as np
+from scipy.ndimage import convolve
+from image_utils import load_image, edge_detection
+from skimage.filters import median
+from skimage.morphology import ball
+import matplotlib.pyplot as plt
+
 def suppress_noise(image_array):
   clean_image = median(image_array, ball(3))
   return clean_image
